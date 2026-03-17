@@ -39,22 +39,29 @@ body {
   color: var(--secondary-color) !important;
 }
 
-/* HERO */
-.hero {
-  height: 90vh;
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1581578731548-c64695cc6952') center/cover;
+/* HERO & PAGE HEADERS */
+.hero, .page-header {
+  height: 60vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1517677208171-0bc6725a3e60') center/cover no-repeat fixed;
   display: flex;
   align-items: center;
   justify-content: center;
+  color: white;
+  text-align: center;
 }
 
-.hero h1 {
+.hero {
+  height: 90vh;
+}
+
+.hero h1, .page-header h1 {
   font-size: 4rem;
   font-weight: 700;
   margin-bottom: 1.5rem;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
 }
 
-.hero p {
+.hero p, .page-header p {
   font-size: 1.25rem;
   margin-bottom: 2rem;
 }
