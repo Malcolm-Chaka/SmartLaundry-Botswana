@@ -2,58 +2,79 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Services - SmartLaundry</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-<!-- NAVBAR (same as before) -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
   <div class="container">
-    <a class="navbar-brand" href="index.html">SmartLaundry</a>
-    <div class="collapse navbar-collapse">
+    <a class="navbar-brand" href="index.html">
+      <i class="fas fa-soap me-2"></i>SmartLaundry
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="nav">
       <ul class="navbar-nav ms-auto">
-        <li><a class="nav-link" href="index.html">Home</a></li>
-        <li><a class="nav-link active" href="services.html">Services</a></li>
-        <li><a class="nav-link" href="how-it-works.html">How It Works</a></li>
-        <li><a class="nav-link" href="order.html">Order</a></li>
-        <li><a class="nav-link" href="contact.html">Contact</a></li>
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link active" href="services.html">Services</a></li>
+        <li class="nav-item"><a class="nav-link" href="how-it-works.html">How It Works</a></li>
+        <li class="nav-item"><a class="nav-link" href="order.html">Order</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
       </ul>
     </div>
   </div>
 </nav>
 
-<div class="container my-5 text-center">
-  <h2>Our Services</h2>
+<section class="container my-5 text-center">
+  <h2 class="mb-5">Our Services</h2>
 
-  <div class="row mt-4">
+  <div class="row g-4 mt-2">
     <div class="col-md-4">
-      <div class="card p-3">
+      <div class="card h-100 p-4">
+        <div class="feature-icon"><i class="fas fa-tshirt"></i></div>
         <h4>Wash & Fold</h4>
-        <p>BWP 80</p>
+        <p class="text-muted">Professional cleaning and perfect folding.</p>
+        <h5 class="text-primary mt-3">BWP 80</h5>
       </div>
     </div>
 
     <div class="col-md-4">
-      <div class="card p-3">
+      <div class="card h-100 p-4">
+        <div class="feature-icon"><i class="fas fa-hot-tub"></i></div>
         <h4>Wash & Iron</h4>
-        <p>BWP 120</p>
+        <p class="text-muted">Crisp ironing for your daily wear.</p>
+        <h5 class="text-primary mt-3">BWP 120</h5>
       </div>
     </div>
 
     <div class="col-md-4">
-      <div class="card p-3">
+      <div class="card h-100 p-4">
+        <div class="feature-icon"><i class="fas fa-shipping-fast"></i></div>
         <h4>Express</h4>
-        <p>Same day + BWP 40</p>
+        <p class="text-muted">Same day delivery for urgent needs.</p>
+        <h5 class="text-primary mt-3">+ BWP 40</h5>
       </div>
     </div>
   </div>
-</div>
+</section>
 
-<footer class="bg-dark text-white text-center p-3">
-  <p>© 2026 SmartLaundry Botswana</p>
+<footer class="text-center">
+  <div class="container">
+    <div class="mb-4">
+      <a href="#" class="text-white me-3 fs-4"><i class="fab fa-facebook"></i></a>
+      <a href="#" class="text-white me-3 fs-4"><i class="fab fa-instagram"></i></a>
+      <a href="#" class="text-white fs-4"><i class="fab fa-whatsapp"></i></a>
+    </div>
+    <p>&copy; 2026 SmartLaundry Botswana. All rights reserved.</p>
+  </div>
 </footer>
 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

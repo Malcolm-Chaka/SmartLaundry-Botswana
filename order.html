@@ -2,30 +2,82 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Order</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Order - SmartLaundry</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-<div class="container my-5">
-  <h2 class="text-center">Place an Order</h2>
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">
+      <i class="fas fa-soap me-2"></i>SmartLaundry
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="nav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+        <li class="nav-item"><a class="nav-link" href="how-it-works.html">How It Works</a></li>
+        <li class="nav-item"><a class="nav-link active" href="order.html">Order</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
 
-  <form id="orderForm">
-    <input class="form-control mb-3" placeholder="Full Name" required>
-    <input class="form-control mb-3" placeholder="Phone Number" required>
+<section class="container my-5">
+  <div class="row justify-content-center">
+    <div class="col-md-6">
+      <div class="card p-5">
+        <h2 class="text-center mb-4">Place an Order</h2>
+        <p class="text-center text-muted mb-4">Fill out the form below and we'll handle the rest.</p>
+        
+        <form id="orderForm">
+          <div class="mb-3">
+            <label class="form-label">Full Name</label>
+            <input type="text" class="form-control" placeholder="Enter your full name" required>
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Phone Number</label>
+            <input type="tel" class="form-control" placeholder="Enter your phone number" required>
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Service Type</label>
+            <select class="form-control">
+              <option>Wash & Fold</option>
+              <option>Wash & Iron</option>
+              <option>Express Service</option>
+            </select>
+          </div>
+          <div class="mb-4">
+            <label class="form-label">Pickup Address</label>
+            <textarea class="form-control" rows="3" placeholder="Enter your address in Gaborone"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary w-100 py-3">Submit Order</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
 
-    <select class="form-control mb-3">
-      <option>Wash & Fold</option>
-      <option>Wash & Iron</option>
-      <option>Express</option>
-    </select>
+<footer class="text-center">
+  <div class="container">
+    <div class="mb-4">
+      <a href="#" class="text-white me-3 fs-4"><i class="fab fa-facebook"></i></a>
+      <a href="#" class="text-white me-3 fs-4"><i class="fab fa-instagram"></i></a>
+      <a href="#" class="text-white fs-4"><i class="fab fa-whatsapp"></i></a>
+    </div>
+    <p>&copy; 2026 SmartLaundry Botswana. All rights reserved.</p>
+  </div>
+</footer>
 
-    <textarea class="form-control mb-3" placeholder="Address"></textarea>
-
-    <button class="btn btn-dark w-100">Submit</button>
-  </form>
-</div>
-
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 <script src="script.js"></script>
 </body>
 </html>

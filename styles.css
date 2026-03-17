@@ -1,25 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+:root {
+  --primary-color: #2c3e50;
+  --secondary-color: #3498db;
+  --accent-color: #f39c12;
+  --text-light: #ecf0f1;
+  --text-dark: #2c3e50;
+  --bg-light: #f8f9fa;
+  --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  --transition: all 0.3s ease;
+}
+
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Poppins', sans-serif;
+  color: var(--text-dark);
+  line-height: 1.6;
+}
+
+/* NAVBAR */
+.navbar {
+  padding: 1rem 0;
+  box-shadow: var(--shadow);
+}
+
+.navbar-brand {
+  font-weight: 700;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+}
+
+.nav-link {
+  font-weight: 500;
+  margin-left: 1.5rem;
+  transition: var(--transition);
+}
+
+.nav-link:hover {
+  color: var(--secondary-color) !important;
 }
 
 /* HERO */
 .hero {
-  height: 80vh;
-  background: url('https://images.unsplash.com/photo-1581578731548-c64695cc6952') center/cover;
+  height: 90vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1581578731548-c64695cc6952') center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-/* THEME */
-.btn-warning {
-  background-color: orange;
+.hero h1 {
+  font-size: 4rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+.hero p {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+}
+
+/* BUTTONS */
+.btn-primary {
+  background-color: var(--secondary-color);
   border: none;
+  padding: 0.8rem 2rem;
+  font-weight: 600;
+  transition: var(--transition);
 }
 
+.btn-primary:hover {
+  background-color: #2980b9;
+  transform: translateY(-2px);
+  box-shadow: var(--shadow);
+}
+
+.btn-warning {
+  background-color: var(--accent-color);
+  border: none;
+  color: white;
+  padding: 0.8rem 2rem;
+  font-weight: 600;
+  transition: var(--transition);
+}
+
+.btn-warning:hover {
+  background-color: #e67e22;
+  transform: translateY(-2px);
+  box-shadow: var(--shadow);
+  color: white;
+}
+
+/* SECTIONS */
+section {
+  padding: 80px 0;
+}
+
+h2 {
+  font-weight: 700;
+  margin-bottom: 3rem;
+  position: relative;
+  display: inline-block;
+}
+
+h2::after {
+  content: '';
+  position: absolute;
+  width: 50%;
+  height: 3px;
+  background: var(--secondary-color);
+  bottom: -10px;
+  left: 25%;
+}
+
+/* CARDS */
 .card {
   border: none;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  border-radius: 15px;
+  box-shadow: var(--shadow);
+  transition: var(--transition);
+  overflow: hidden;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.feature-icon {
+  font-size: 3rem;
+  color: var(--secondary-color);
+  margin-bottom: 1.5rem;
 }
 
 /* FOOTER */
 footer {
-  margin-top: 50px;
+  background-color: var(--primary-color);
+  color: var(--text-light);
+  padding: 50px 0 20px;
+}
+
+footer p {
+  margin-bottom: 0;
+}
+
+/* FORMS */
+.form-control {
+  padding: 0.8rem;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+.form-control:focus {
+  box-shadow: 0 0 0 0.25rem rgba(52, 152, 219, 0.25);
+  border-color: var(--secondary-color);
+}
+
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2.5rem;
+  }
 }
