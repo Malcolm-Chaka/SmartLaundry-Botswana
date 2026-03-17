@@ -1,8 +1,25 @@
-.hero {
-    height: 80vh;
-    background: url('https://images.unsplash.com/photo-1581578731548-c64695cc6952') center/cover;
+body {
+  font-family: Arial, sans-serif;
 }
 
-h1, h2 {
-    font-weight: bold;
+/* HERO */
+.hero {
+  height: 80vh;
+  background: url('https://images.unsplash.com/photo-1581578731548-c64695cc6952') center/cover;
+}
+
+/* THEME */
+.btn-warning {
+  background-color: orange;
+  border: none;
+}
+
+.card {
+  border: none;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* FOOTER */
+footer {
+  margin-top: 50px;
 }
