@@ -12,10 +12,10 @@
 <body>
 
 <!-- NAVBAR -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+<nav class="navbar navbar-expand-lg sticky-top">
   <div class="container">
     <a class="navbar-brand" href="index.html">
-      <i class="fas fa-soap me-2"></i>SmartLaundry
+      <i class="fas fa-droplet me-2"></i>SmartLaundry
     </a>
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
@@ -23,58 +23,71 @@
     </button>
 
     <div class="collapse navbar-collapse" id="nav">
-      <ul class="navbar-nav ms-auto">
+      <ul class="navbar-nav mx-auto">
         <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
         <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
         <li class="nav-item"><a class="nav-link" href="how-it-works.html">How It Works</a></li>
-        <li class="nav-item"><a class="nav-link" href="order.html">Order</a></li>
+        <li class="nav-item"><a class="nav-link" href="about-us.html">About Us</a></li>
         <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
       </ul>
+      <div class="d-flex align-items-center">
+        <a href="#" class="btn-login">Login</a>
+        <a href="order.html" class="btn btn-primary">Get Started</a>
+      </div>
     </div>
   </div>
 </nav>
 
 <!-- HERO -->
-<section class="hero text-white text-center">
+<section class="hero">
   <div class="container">
-    <h1 class="display-3 fw-bold">SmartLaundry Botswana</h1>
-    <p class="lead">Premium Laundry Pickup & Delivery in Gaborone</p>
-    <div class="mt-4">
-      <a href="order.html" class="btn btn-warning btn-lg me-3">Book Now</a>
-      <a href="services.html" class="btn btn-outline-light btn-lg">View Services</a>
+    <div class="row align-items-center">
+      <div class="col-lg-6">
+        <h1 class="display-4 fw-bold">Experience the Future of Laundry in Botswana</h1>
+        <p class="lead">Premium laundry, dry cleaning, and folding services delivered right to your doorstep. Experience quality and convenience like never before.</p>
+        <div class="d-flex gap-3 mt-4">
+          <a href="order.html" class="btn btn-primary btn-lg">Book a Wash</a>
+          <a href="services.html" class="btn btn-outline-primary btn-lg">Our Services</a>
+        </div>
+      </div>
+      <div class="col-lg-6 hero-image">
+        <img src="https://images.unsplash.com/photo-1545173168-9f1947eebb7f?auto=format&fit=crop&w=800&q=80" alt="Clean Laundry" class="img-fluid">
+      </div>
     </div>
   </div>
 </section>
 
 <!-- WHY US -->
-<section class="container text-center">
-  <h2 class="mb-5">Why Choose Us</h2>
-  <div class="row g-4 mt-2">
-    <div class="col-md-4">
-      <div class="card h-100 p-4">
-        <div class="feature-icon">
-          <i class="fas fa-bolt"></i>
+<section class="bg-light">
+  <div class="container">
+    <h2 class="mb-5">Why Choose SmartLaundry?</h2>
+    <div class="row g-4 mt-2">
+      <div class="col-md-4 text-center">
+        <div class="card h-100">
+          <div class="feature-icon mx-auto">
+            <i class="fas fa-truck"></i>
+          </div>
+          <h5>Doorstep Pickup & Delivery</h5>
+          <p class="text-muted">Free pickup and delivery right to your doorstep across Gaborone. We save you time.</p>
         </div>
-        <h5>Fast Service</h5>
-        <p class="text-muted">24-hour turnaround for most orders. We value your time.</p>
       </div>
-    </div>
-    <div class="col-md-4">
-      <div class="card h-100 p-4">
-        <div class="feature-icon">
-          <i class="fas fa-tags"></i>
+      <div class="col-md-4 text-center">
+        <div class="card h-100">
+          <div class="feature-icon mx-auto">
+            <i class="fas fa-leaf"></i>
+          </div>
+          <h5>Eco-Friendly Cleaning</h5>
+          <p class="text-muted">We use environment-friendly detergents and advanced cleaning technology for your clothes.</p>
         </div>
-        <h5>Affordable</h5>
-        <p class="text-muted">Transparent and competitive pricing with no hidden costs.</p>
       </div>
-    </div>
-    <div class="col-md-4">
-      <div class="card h-100 p-4">
-        <div class="feature-icon">
-          <i class="fas fa-truck"></i>
+      <div class="col-md-4 text-center">
+        <div class="card h-100">
+          <div class="feature-icon mx-auto">
+            <i class="fas fa-tags"></i>
+          </div>
+          <h5>Affordable Pricing</h5>
+          <p class="text-muted">Premium service at competitive rates with transparent pricing and no hidden fees.</p>
         </div>
-        <h5>Convenient</h5>
-        <p class="text-muted">Free pickup and delivery right to your doorstep in Gaborone.</p>
       </div>
     </div>
   </div>
@@ -92,9 +105,9 @@
 <footer class="text-center">
   <div class="container">
     <div class="mb-4">
-      <a href="#" class="text-white me-3 fs-4"><i class="fab fa-facebook"></i></a>
-      <a href="#" class="text-white me-3 fs-4"><i class="fab fa-instagram"></i></a>
-      <a href="#" class="text-white fs-4"><i class="fab fa-whatsapp"></i></a>
+      <a href="#" class="me-3 fs-4"><i class="fab fa-facebook"></i></a>
+      <a href="#" class="me-3 fs-4"><i class="fab fa-instagram"></i></a>
+      <a href="#" class="fs-4"><i class="fab fa-whatsapp"></i></a>
     </div>
     <p>&copy; 2026 SmartLaundry Botswana. All rights reserved.</p>
   </div>

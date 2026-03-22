@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Order - SmartLaundry</title>
+  <title>About Us - SmartLaundry</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="styles.css">
@@ -26,7 +26,7 @@
         <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
         <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
         <li class="nav-item"><a class="nav-link" href="how-it-works.html">How It Works</a></li>
-        <li class="nav-item"><a class="nav-link" href="about-us.html">About Us</a></li>
+        <li class="nav-item"><a class="nav-link active" href="about-us.html">About Us</a></li>
         <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
       </ul>
       <div class="d-flex align-items-center">
@@ -39,40 +39,43 @@
 
 <header class="page-header">
   <div class="container">
-    <h1 class="display-4 fw-bold">Place Your Order</h1>
-    <p class="lead">Quick Booking for a Stress-Free Laundry Day</p>
+    <h1 class="display-4 fw-bold">About Us</h1>
+    <p class="lead">Serving Gaborone with Excellence and Care</p>
   </div>
 </header>
+
 <section class="container my-5">
-  <div class="row justify-content-center">
-    <div class="col-md-6">
-      <div class="card p-5">
-        <h2 class="text-center mb-4">Place an Order</h2>
-        <p class="text-center text-muted mb-4">Fill out the form below and we'll handle the rest.</p>
-        
-        <form id="orderForm">
-          <div class="mb-3">
-            <label class="form-label">Full Name</label>
-            <input type="text" class="form-control" placeholder="Enter your full name" required>
-          </div>
-          <div class="mb-3">
-            <label class="form-label">Phone Number</label>
-            <input type="tel" class="form-control" placeholder="Enter your phone number" required>
-          </div>
-          <div class="mb-3">
-            <label class="form-label">Service Type</label>
-            <select class="form-control" id="serviceSelect">
-              <option>Wash & Fold</option>
-              <option>Wash & Iron</option>
-              <option>Express Service</option>
-            </select>
-          </div>
-          <div class="mb-4">
-            <label class="form-label">Pickup Address</label>
-            <textarea class="form-control" rows="3" placeholder="Enter your address in Gaborone"></textarea>
-          </div>
-          <button type="submit" class="btn btn-primary w-100 py-3">Submit Order</button>
-        </form>
+  <div class="row align-items-center">
+    <div class="col-lg-6">
+      <h2 class="text-start mb-4">Our Mission</h2>
+      <p>At SmartLaundry Botswana, we believe that your time is precious. Our mission is to provide Gaborone residents with a seamless, high-quality laundry experience that frees up your schedule for the things that truly matter.</p>
+      <p>We combine advanced cleaning technology with eco-friendly practices to ensure your garments receive the best care possible, all while maintaining our commitment to environmental sustainability.</p>
+    </div>
+    <div class="col-lg-6">
+      <img src="https://images.unsplash.com/photo-1521791136064-7986c2923216?auto=format&fit=crop&w=800&q=80" alt="Our Team" class="img-fluid rounded-4 shadow">
+    </div>
+  </div>
+
+  <div class="row mt-5 pt-5 text-center">
+    <div class="col-md-4">
+      <div class="card h-100 p-4">
+        <div class="feature-icon mx-auto"><i class="fas fa-heart"></i></div>
+        <h4>Quality First</h4>
+        <p class="text-muted">Every item is treated with the utmost care and attention to detail.</p>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card h-100 p-4">
+        <div class="feature-icon mx-auto"><i class="fas fa-clock"></i></div>
+        <h4>Timely Service</h4>
+        <p class="text-muted">We respect your schedule with reliable pickup and delivery windows.</p>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card h-100 p-4">
+        <div class="feature-icon mx-auto"><i class="fas fa-shield-alt"></i></div>
+        <h4>Trustworthy</h4>
+        <p class="text-muted">Your belongings are safe with us. We take full responsibility for your items.</p>
       </div>
     </div>
   </div>
@@ -90,6 +93,5 @@
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-<script src="script.js"></script>
 </body>
 </html>
