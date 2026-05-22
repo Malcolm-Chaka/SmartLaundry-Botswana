@@ -32,6 +32,11 @@ body {
   align-items: center;
 }
 
+.navbar-brand img {
+  height: 100px;
+  width: auto;
+}
+
 .navbar-brand i {
   margin-right: 10px;
 }
