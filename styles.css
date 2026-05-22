@@ -33,8 +33,10 @@ body {
 }
 
 .navbar-brand img {
-  height: 50px;
+  height: 80px;
   width: auto;
+  max-width: 200px;
+  object-fit: contain;
 }
 
 .navbar-brand i {
